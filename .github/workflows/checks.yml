@@ -1,0 +1,26 @@
+name: Checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  helpers:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+        python: ['3.10', '3.12']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s skills/ai-brain-consolidate/scripts -p 'test_*.py' -v
+      - run: python scripts/check_release.py
+      - run: python scripts/demo.py --destination "${{ runner.temp }}/fictional-brain-trial"
+      - run: python scripts/build_standalone.py --output "${{ runner.temp }}/Build-Your-Own-AI-Brain.md"
+      - run: python scripts/extract_standalone.py "${{ runner.temp }}/Build-Your-Own-AI-Brain.md" "${{ runner.temp }}/extracted-guide"
+      - run: python "${{ runner.temp }}/extracted-guide/scripts/check_release.py"
+      - run: python -m unittest discover -s "${{ runner.temp }}/extracted-guide/skills/ai-brain-consolidate/scripts" -p 'test_*.py'

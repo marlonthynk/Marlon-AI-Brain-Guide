@@ -1,0 +1,2 @@
+# Tested helper dependency. Basic Memory is installed separately with its official installer.
+PyYAML==6.0.3

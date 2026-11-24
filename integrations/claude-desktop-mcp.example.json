@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "basic-memory": {
+      "command": "/absolute/path/to/basic-memory",
+      "args": [
+        "mcp",
+        "--project",
+        "YOUR_PROJECT"
+      ]
+    }
+  }
+}

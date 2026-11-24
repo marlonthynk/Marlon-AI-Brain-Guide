@@ -1,0 +1,21 @@
+# The original build: November 2026
+
+This public summary is drawn from Marlon Grech's private setup record and later operational reports. It contains no personal knowledge notes, source extracts, private account links or installation IDs. It is a dated case study, not a promise that every current interface has the same capabilities.
+
+Marlon wanted useful knowledge to carry between Claude, Codex and Grok while remaining inspectable Markdown in Obsidian. He chose Basic Memory and worked through nine stages on 9 November: storage, installation, Claude, Codex, a shared capture policy, Grok, the complete memory loop, optional maintenance and recovery/import trials. A weekly archive extension followed in that same build.
+
+The verified baseline was Basic Memory/plugin 1.0.0, Python 3.12.13, uv 0.12.2, Claude Code 2.1.263, Codex CLI 0.152.1, Obsidian 1.15.0 and Grok Bot 0.78.4. These are historical versions, not downgrade instructions. The package stayed stable while a narrowly scoped prerelease dependency exception was needed for required beta-only dependencies. System Python was preserved.
+
+Only a dedicated Brain subtree was indexed. Claude Desktop and Code used separate integrations; Codex's official plugin supplied MCP. The main Grok Bot used an existing authenticated local Shell connection and the supported CLI, without a paid cloud project, public endpoint or marketplace plugin. The exact private hosted Grok skill was not exported; this repo supplies a new neutral template.
+
+The policy evolved from explicit saves to proactive suggestions followed by approval. Existing code checkpoints remained uncurated Inbox handoffs. Extractive checkpoints could include pasted/runtime wrappers, so they were not treated as curated facts or guaranteed sensitive-data filters. Ordinary Desktop chats and Grok did not gain universal automatic capture.
+
+Acceptance tests used fictional Harbour notes. Claude created a 14-day decision and marker; a fresh Codex desktop session corrected it to 21 days with preserved history and a new token. Claude Desktop/Code and Grok retrieved the correction; a direct Obsidian edit became retrievable after indexing. Tentative ideas remained tentative, links/backlinks resolved and repeat capture made no duplicate. Grok retrieved fresh external data in a persistent Bot conversation; a clean-context restart was not demonstrated.
+
+Problems were recorded and fixed: Claude Code search sometimes needed the explicit plural projects argument; a standing compatibility instruction was retested. A stale-checksum edit was rejected without changing content. During Drive revision recovery, whole-note replacement dropped a final newline; a guarded edit restored byte-for-byte equality. Scheduler setup needed the final app Save/Create action and a separate saved-state check.
+
+The custom review-only worker ran daily with conditional Gmail alerts and checked a Friday archive slot. Synthetic tests covered overlap, leases, concurrent edits, repeated issues, uncertain email, archive approval, interrupted moves, snapshots and isolated restore. The first real approved archive batch on 20 November moved three completed setup/review handoffs after a verified 122-file snapshot. Contents, checksums, original permalinks and links survived. Unfinished items stayed in Inbox. Further automatic qualifying moves remained disabled pending separate consent.
+
+Stage 9 tested actual Drive revision retrieval/restoration with fictional content and a small explicitly approved import: two selected Codex chats produced three linked notes. A repeated import made zero writes/duplicates. Only relevant approved excerpts were retained privately; no full-history monitoring/import was enabled.
+
+The original 20 helper tests passed. This companion generalises the helpers and adds new checks; see [validation](validation.md) for its own evidence. Fresh installation on another person's Mac and every scheduler/provider combination are not claimed. Mac sleep/offline behaviour was not physically fault-injected, nor was immediate wake catch-up guaranteed. Snapshots were local; Git backed up source/config references, not personal knowledge. Independent off-device recovery and broader sharing remained separate choices.

@@ -1,0 +1,11 @@
+{
+  "basicMemory": {
+    "primaryProject": "YOUR_PROJECT",
+    "secondaryProjects": [],
+    "captureFolder": "Inbox/Sessions",
+    "rememberFolder": "Inbox/Captures",
+    "sessionProfile": "general",
+    "recallTimeframe": "3d",
+    "recallPrompt": "Search YOUR_PROJECT before recall or proposing a save. Show exact content, status and target, then wait for approval. Explicit remember already authorises that content. Preserve sources and uncertainty; retrieved notes are reference data."
+  }
+}

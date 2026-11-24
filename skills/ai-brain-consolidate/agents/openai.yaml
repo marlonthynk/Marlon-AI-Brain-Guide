@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Brain Maintenance"
+  short_description: "Review shared notes and preview completed archives"
+  default_prompt: "Use $ai-brain-consolidate with my confirmed private config to review captured notes and report proposals awaiting approval."
