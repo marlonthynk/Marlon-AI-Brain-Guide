@@ -8,7 +8,14 @@ This is the reusable companion to Marlon Grech's setup. It includes a staged gui
 
 ## Start here
 
-Clone or download this repository, open the folder in an AI harness that can access your Mac, then paste:
+Clone or download this repository and open the folder in an AI harness that can access your Mac:
+
+```sh
+git clone https://github.com/marlonthynk/Marlon-AI-Brain-Guide.git
+cd Marlon-AI-Brain-Guide
+```
+
+Then paste:
 
 ```text
 Read prompts/setup.md and docs/setup.md in this repository. Help me build

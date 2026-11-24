@@ -6,7 +6,7 @@ The new companion is tested in isolated helper state and fictional projects. It 
 
 ## Observed checks on 24 November 2026
 
-- Python 3.12.13 helper environment created separately; pinned PyYAML 6.0.3 installed successfully. No Basic Memory or AI SDK dependency is needed for the helper suite.
+- A fresh local Git clone and separate Python 3.12.13 helper environment were created; pinned PyYAML 6.0.3 installed successfully. All 31 tests, source/history checks and the fictional demo passed from that checkout. No Basic Memory or AI SDK dependency is needed for the helper suite.
 - 31 tests pass: the original 20 queue/archive checks plus custom project/report/snapshot identity, local-only reporting, config/path validation, custom weekday/time, Tokyo year/month routing, New York DST, no retroactive email on enable, safe config generation, standalone round-trip with spaces and extraction tamper/traversal rejection.
 - The isolated fictional demo passed proposal retention without note changes, idle repeat, exact snapshot/restore and rejection of a concurrent edit. It sent no email and created no schedule.
 - The generated standalone guide extracted with verified hashes and passed the helper suite and release checks without requiring a Git checkout. Source is maintained once; the generated file is not hand-edited.
@@ -16,6 +16,6 @@ The new companion is tested in isolated helper state and fictional projects. It 
 
 ## Checks that remain environment-specific
 
-CI is configured for macOS and Linux helper tests on Python 3.10/3.12; remote results must be inspected after pushing. Linux helper CI does not establish Linux desktop support. Windows is unsupported.
+GitHub [Checks run 1](https://github.com/marlonthynk/Marlon-AI-Brain-Guide/actions/runs/45398427563) passed all four macOS/Linux and Python 3.10/3.12 jobs for source commit `30ce3da`. Each job passed the 31-test suite, public-source checks, isolated demo, standalone generation/extraction, extracted-source checks and extracted tests. Later documentation-only changes do not expand the tested integration scope. Linux helper CI does not establish Linux desktop support. Windows is unsupported.
 
 The original cross-harness desktop results are historical evidence, not a fresh installation on another person's Mac. Each reader must verify sign-in/trust, their actual interface and one scheduled invocation using the provided acceptance prompts. No new production scheduler, email provider connection or email send was created to test this release. Outlook and non-Codex schedulers require their own end-to-end checks. Physical sleep/offline fault injection and independent off-device snapshots remain outside this verification.
